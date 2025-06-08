@@ -326,17 +326,8 @@ input[type='number'] {
   right: unset
 }
 .workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button svg {
-  display: none;
+  display: yes;
 }
-.workspace .mod-root .workspace-tab-header .workspace-tab-header-inner-close-button:before {
-  content: "X";
-  padding-left: 5px;
-}
-.workspace .mod-root .workspace-tab-header.mod-active .workspace-tab-header-inner-close-button:before {
-  content: ">";
-  font-size: 1.1em;
-}
-
 .workspace .mod-root .workspace-tab-header {
   box-shadow: none;
   padding-left: 20px;
@@ -393,48 +384,23 @@ input[type='number'] {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid var(--icon-color-hover);
+  border-top: 11px solid var(--icon-color-hover);
 }
 .workspace-ribbon.mod-left .side-dock-ribbon-action[aria-label="Settings"] {
   opacity: 1;
 }
 .status-bar {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 /* HIDER */
-/* Frameless */
-body {
-  padding-top: 0 !important;
-}
-/* Hide ribbon */
-.workspace-ribbon.mod-left,
-.workspace-ribbon.mod-right {
-  /* display: none; */
-  flex-basis: 0px;
-  border-width: 0px;
-}
-.workspace-ribbon.mod-left:before {
-  display: none;
-}
-.workspace-split.mod-right-split,
-.workspace-split.mod-left-split {
-  margin-right:0;
-}
 
-.mod-macos {
-  --frame-left-space: calc(100px - var(--ribbon-width));
-  --frame-right-space: 0px;
-}
-
-.sidebar-toggle-button {
-  display: none;
-}
 
 /* Frameless */
 .titlebar-button-container {
   display:none;
 }
+
 .titlebar,
 .titlebar-inner {
   position:fixed;
@@ -442,9 +408,7 @@ body {
   height:12px;
   background:transparent;
 }
-/* .workspace-split.mod-left-split > .workspace-tabs {
-  padding-top:18px;
-} */
+
 /* Hide scrollbars */
 ::-webkit-scrollbar {
   display:none;
@@ -1427,11 +1391,7 @@ button.document-search-button:not([aria-label]):before {
 .empty-state-title {
   margin-top: 0;
 }
-/* Empty right sidebar */
-.mod-right-split .u-muted:before {
-  content: "\A\A    |\\__/,|   (`\\\A  _.|o o  |_   ) )\A-(((---(((--------\A";
-  white-space: pre;
-}
+
 .mod-left-split .u-muted:before {
   content: "    /\\___/\\\A     `)9 9('\A     {_:Y:.}_\A----( )U-'( )----------\A     ```   '''\A";
   white-space: pre;
